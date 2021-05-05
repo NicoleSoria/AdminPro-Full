@@ -1,0 +1,15 @@
+<div class="row">
+
+        <div class="col-6" *ngFor="let grafica of graficos">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">{{grafica.leyenda}}</h3>
+                    <app-graficaDona  [data]="grafica.data"
+                                [labels]="grafica.labels"
+                                [chartType]="grafica.type">
+                    </app-graficaDona>
+                </div>
+            </div>
+        </div>
+
+</div>

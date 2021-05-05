@@ -1,0 +1,1 @@
+export const urlService = 'http://localhost:3001/';
